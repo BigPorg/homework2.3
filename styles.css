@@ -1,0 +1,92 @@
+/* header */
+header {
+    padding: 60px;
+    text-align: center;
+    background: #005cb3;
+    color: #fff
+}
+
+/* nav */
+nav {
+    display: flex;
+    background-color: #7f9ed8;
+    color: brown;
+  }
+
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blanchedalmond ;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: medium ;
+    color:royalblue ;
+    background-size: 40%;
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+.row {
+    margin: 8px -16px;
+  }
+  
+.row > .column {
+    padding: 8px;
+  }
+  
+.column {
+    float: left;
+    width: 25%;
+  }
+
+.content {
+    flex-grow: 1;
+}
+
+#zoom:hover {
+    transform: scale(1.5);
+}
+
+/* top links */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+/* this didn't end up working the way i want it to */
+li:hover {
+    text-align: right;
+    box-shadow: 0 4px 4px greenyellow(0, 0, 0, 1);
+    transform: scale(1.3);
+    filter:blur(13px);
+    cursor: "can't catch me"
+}
+
+.contact {
+    margin-left: 5px;
+    font-size: 24px;
+}
+
+/* footer */
+footer {
+    color: seagreen;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+}
+/* media queries */
+@media screen and (min-width: 768px) {
+    flex-direction: column;
+}
+
+@media and (max-width: 992px) {
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+    flex-direction: column;
+}
